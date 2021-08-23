@@ -1,26 +1,24 @@
-/*
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<stdlib.h>
 
 int main()
 {
-	double *high, *low; // ÇÒ´ç ¹ÞÀº ±â¾ï°ø°£À» ¿¬°áÇÑ Æ÷ÀÎÅÍ º¯¼ö
+	double *high, *low; // í• ë‹¹ ë°›ì€ ê¸°ì–µê³µê°„ì„ ì—°ê²°í•œ í¬ì¸í„° ë³€ìˆ˜
 
-	high = (double *)malloc(sizeof(double)); // ÃÖ°í±â¿Â µ¿Àû ¸Þ¸ð¸® ÇÒ´ç
-	low = (double *)malloc(sizeof(double)); // ÃÖÀú±â¿Â µ¿Àû ¸Þ¸ð¸® ÇÒ´ç
-	if (high == 0 || low==0) // ±â¾ï°ø°£ÀÇ ÇÒ´ç ¿©ºÎ¸¦ °Ë»ç
+	high = (double *)malloc(sizeof(double)); // ìµœê³ ê¸°ì˜¨ ë™ì  ë©”ëª¨ë¦¬ í• ë‹¹
+	low = (double *)malloc(sizeof(double)); // ìµœì €ê¸°ì˜¨ ë™ì  ë©”ëª¨ë¦¬ í• ë‹¹
+	if (high == 0 || low==0) // ê¸°ì–µê³µê°„ì˜ í• ë‹¹ ì—¬ë¶€ë¥¼ ê²€ì‚¬
 	{
-		printf("¸Þ¸ð¸®°¡ ºÎÁ·ÇÕ´Ï´Ù.\n");
+		printf("ë©”ëª¨ë¦¬ê°€ ë¶€ì¡±í•©ë‹ˆë‹¤.\n");
 		return 0;
 	}
-	printf("ÃÖ°í±â¿Â°ú ÃÖÀú±â¿ÂÀ» ÀÔ·ÂÇÏ¼¼¿ä :");
+	printf("ìµœê³ ê¸°ì˜¨ê³¼ ìµœì €ê¸°ì˜¨ì„ ìž…ë ¥í•˜ì„¸ìš” :");
 	scanf("%lf %lf", high, low);
 
-	printf("ÀÏ±³Â÷´Â %.1lfµµ ÀÔ´Ï´Ù.\n", *high - *low);
-	free(high); // ÇÒ´ç ¹ÞÀº ±â¾ï°ø°£ ¹ÝÈ¯, ¿©±â¼­ ¹ÝÈ¯ÇÏÁö ¾Ê¾Æµµ ÇÁ·Î±×·¥ Á¾·á¿Í ÇÔ²² ÀÚµ¿ ¹ÝÈ¯µÊ.
+	printf("ì¼êµì°¨ëŠ” %.1lfë„ ìž…ë‹ˆë‹¤.\n", *high - *low);
+	free(high); // í• ë‹¹ ë°›ì€ ê¸°ì–µê³µê°„ ë°˜í™˜, ì—¬ê¸°ì„œ ë°˜í™˜í•˜ì§€ ì•Šì•„ë„ í”„ë¡œê·¸ëž¨ ì¢…ë£Œì™€ í•¨ê»˜ ìžë™ ë°˜í™˜ë¨.
 	free(low);
 
 	return 0;
 }
-*/

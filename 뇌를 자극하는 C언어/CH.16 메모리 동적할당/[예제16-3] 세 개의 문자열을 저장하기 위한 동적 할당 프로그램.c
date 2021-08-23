@@ -1,4 +1,3 @@
-/*
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 #include<stdlib.h>
@@ -6,15 +5,15 @@
 
 int main()
 {
-	char temp[80]; // ÀÓ½Ã ¹®ÀÚ¹è¿­, ÃæºÐÈ÷ Å©°Ô È®º¸
-	char *str[3]; // µ¿Àû ÇÒ´çµÈ ±â¾ï°ø°£À» ¿¬°áÇÒ Æ÷ÀÎÅÍ¹è¿­
+	char temp[80]; // ìž„ì‹œ ë¬¸ìžë°°ì—´, ì¶©ë¶„ížˆ í¬ê²Œ í™•ë³´
+	char *str[3]; // ë™ì  í• ë‹¹ëœ ê¸°ì–µê³µê°„ì„ ì—°ê²°í•  í¬ì¸í„°ë°°ì—´
 	int i;
 
 	for (i = 0; i < 3; i++)
 	{
-		printf("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+		printf("ë¬¸ìžì—´ì„ ìž…ë ¥í•˜ì„¸ìš” : ");
 		gets(temp);
-		str[i] = (char *)malloc(strlen(temp) + 1); // ±â¾ï°ø°£ ÇÒ´ç°ú ¿¬°á
+		str[i] = (char *)malloc(strlen(temp) + 1); // ê¸°ì–µê³µê°„ í• ë‹¹ê³¼ ì—°ê²°
 		strcpy(str[i], temp);
 	}
 	for (i = 0; i < 3; i++)
@@ -23,8 +22,7 @@ int main()
 	}
 	for (i = 0; i < 3; i++)
 	{
-		free(str[i]); // ÇÒ´ç¹ÞÀº ¸Þ¸ð¸® ¹ÝÈ¯
+		free(str[i]); // í• ë‹¹ë°›ì€ ë©”ëª¨ë¦¬ ë°˜í™˜
 	}
 	return 0;
 }
-*/

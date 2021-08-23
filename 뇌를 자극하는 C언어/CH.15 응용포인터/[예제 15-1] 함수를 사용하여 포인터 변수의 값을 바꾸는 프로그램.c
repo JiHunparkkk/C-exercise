@@ -1,25 +1,23 @@
-/*
 #include<stdio.h>
 
-void exchange_ptr(char **, char**); // ÇÔ¼öÀÇ ¼±¾ğ
+void exchange_ptr(char **, char**); // í•¨ìˆ˜ì˜ ì„ ì–¸
 
 int main()
 {
 	char *ap = "success";
 	char *bp = "failure";
 
-	printf("ap -> %s, bp -> %s\n", ap, bp); // ¹Ù²Ù±â Àü ¹®ÀÚ¿­ Ãâ·Â
-	exchange_ptr(&ap, &bp); // ÇÔ¼ö È£Ãâ
-	printf("ap -> %s, bp -> %s\n", ap, bp); // ¹Ù²Û ÈÄ ¹®ÀÚ¿­ Ãâ·Â
+	printf("ap -> %s, bp -> %s\n", ap, bp); // ë°”ê¾¸ê¸° ì „ ë¬¸ìì—´ ì¶œë ¥
+	exchange_ptr(&ap, &bp); // í•¨ìˆ˜ í˜¸ì¶œ
+	printf("ap -> %s, bp -> %s\n", ap, bp); // ë°”ê¾¼ í›„ ë¬¸ìì—´ ì¶œë ¥
 	return 0;
 }
 
-void exchange_ptr(char **app, char**bpp) // ÇÔ¼öÀÇ Á¤ÀÇ
+void exchange_ptr(char **app, char**bpp) // í•¨ìˆ˜ì˜ ì •ì˜
 {
-	char *tp; // ÀÓ½Ã Æ÷ÀÎÅÍ º¯¼ö
+	char *tp; // ì„ì‹œ í¬ì¸í„° ë³€ìˆ˜
 
 	tp = *app;
 	*app = *bpp;
 	*bpp = tp;
 }
-*/

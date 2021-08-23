@@ -1,12 +1,11 @@
-/*
 #include<stdio.h>
 
 int main()
 {
-	char *ptr_ary[5]; // Æ÷ÀÎÅÍ ¹è¿­ ¼±¾ğ
-	int i; // ¹İº¹Á¦¾îº¯¼ö
+	char *ptr_ary[5]; // í¬ì¸í„° ë°°ì—´ ì„ ì–¸
+	int i; // ë°˜ë³µì œì–´ë³€ìˆ˜
 
-	ptr_ary[0] = "dog"; // °¢ ¹è¿­¿ä¼Ò¿¡ ¹®ÀÚ¿­»ó¼ö(Æ÷ÀÎÅÍ)¸¦ ´ëÀÔ
+	ptr_ary[0] = "dog"; // ê° ë°°ì—´ìš”ì†Œì— ë¬¸ìì—´ìƒìˆ˜(í¬ì¸í„°)ë¥¼ ëŒ€ì…
 	ptr_ary[1] = "elephant";
 	ptr_ary[2] = "horse";
 	ptr_ary[3] = "tiger";
@@ -18,4 +17,3 @@ int main()
 	}
 	return 0;
 }
-*/

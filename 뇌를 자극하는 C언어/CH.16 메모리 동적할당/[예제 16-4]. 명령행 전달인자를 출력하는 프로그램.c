@@ -1,15 +1,13 @@
-/* 
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 
-int main(int argc, char **argv) // ¸í·ÉÇà Àü´ŞÀÎÀÚ¸¦ ¹ŞÀ» ¸Å°³º¯¼ö
+int main(int argc, char **argv) // ëª…ë ¹í–‰ ì „ë‹¬ì¸ìë¥¼ ë°›ì„ ë§¤ê°œë³€ìˆ˜
 {
 	int i;
 
-	for (i = 0; i < argc; i++) // Àü´ŞÀÎÀÚ(¹®ÀÚ¿­)ÀÇ °³¼ö¸¸Å­ ¹İº¹
+	for (i = 0; i < argc; i++) // ì „ë‹¬ì¸ì(ë¬¸ìì—´)ì˜ ê°œìˆ˜ë§Œí¼ ë°˜ë³µ
 	{
-		printf("%s\n", argv[i]); // Àü´ŞÀÎÀÚ(¹®ÀÚ¿­)¸¦ ÇÏ³ª¾¿ Ãâ·Â
+		printf("%s\n", argv[i]); // ì „ë‹¬ì¸ì(ë¬¸ìì—´)ë¥¼ í•˜ë‚˜ì”© ì¶œë ¥
 	}
 	return 0;
 }
-*/

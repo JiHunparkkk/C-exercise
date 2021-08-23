@@ -1,23 +1,22 @@
-/*
 #include<stdio.h>
 
-void exchange(double *, double *); // ±³È¯ ÇÔ¼ö
-void func(void(*)(double *, double *), double, double); // ÇÔ¼öÀÇ ¼±¾ğ
+void exchange(double *, double *); // êµí™˜ í•¨ìˆ˜
+void func(void(*)(double *, double *), double, double); // í•¨ìˆ˜ì˜ ì„ ì–¸
 
 int main()
 {
-	double a = 10, b = 20; // º¯¼öÀÇ ¼±¾ğ°ú ÃÊ±âÈ­
+	double a = 10, b = 20; // ë³€ìˆ˜ì˜ ì„ ì–¸ê³¼ ì´ˆê¸°í™”
 
-	func(exchange, a, b); // ÇÔ¼öÆ÷ÀÎÅÍ¿Í ±³È¯ÇÒ °ªÀ» ÁÖ°í È£Ãâ
+	func(exchange, a, b); // í•¨ìˆ˜í¬ì¸í„°ì™€ êµí™˜í•  ê°’ì„ ì£¼ê³  í˜¸ì¶œ
 	return 0;
 }
-void func(void(*fp)(double *, double *), double a, double b) // ±³È¯ÇÔ¼ö¸¦ °¡¸®Å°´Â ÇÔ¼öÆ÷ÀÎÅÍº¯¼ö¿Í ±³È¯ÇÒ °ªÀ» ÀúÀåÇÒ ¸Å°³º¯¼ö
+void func(void(*fp)(double *, double *), double a, double b) // êµí™˜í•¨ìˆ˜ë¥¼ ê°€ë¦¬í‚¤ëŠ” í•¨ìˆ˜í¬ì¸í„°ë³€ìˆ˜ì™€ êµí™˜í•  ê°’ì„ ì €ì¥í•  ë§¤ê°œë³€ìˆ˜
 {
-	printf("¹Ù²Ù±â ÀüÀÇ a,bÀÇ °ª : %lf, %lf\n", a, b);
-	fp(&a, &b); // ÇÔ¼öÆ÷ÀÎÅÍº¯¼ö·Î ±³È¯ÇÔ¼ö¸¦ È£Ãâ
-	printf("¹Ù²Û ÈÄÀÇ a,bÀÇ °ª : %lf, %lf", a,b);
+	printf("ë°”ê¾¸ê¸° ì „ì˜ a,bì˜ ê°’ : %lf, %lf\n", a, b);
+	fp(&a, &b); // í•¨ìˆ˜í¬ì¸í„°ë³€ìˆ˜ë¡œ êµí™˜í•¨ìˆ˜ë¥¼ í˜¸ì¶œ
+	printf("ë°”ê¾¼ í›„ì˜ a,bì˜ ê°’ : %lf, %lf", a,b);
 }
-void exchange(double *ap, double *bp) // ±³È¯ÇÔ¼öÀÇ Á¤ÀÇ, Æ÷ÀÎÅÍ¸¦ È£ÃâÇÏ¿© func ÇÔ¼öÀÇ ¸Å°³º¯¼ö a,bÀÇ °ªÀ» ¹Ù²Û´Ù.
+void exchange(double *ap, double *bp) // êµí™˜í•¨ìˆ˜ì˜ ì •ì˜, í¬ì¸í„°ë¥¼ í˜¸ì¶œí•˜ì—¬ func í•¨ìˆ˜ì˜ ë§¤ê°œë³€ìˆ˜ a,bì˜ ê°’ì„ ë°”ê¾¼ë‹¤.
 {
 	double tp;
 
@@ -25,4 +24,3 @@ void exchange(double *ap, double *bp) // ±³È¯ÇÔ¼öÀÇ Á¤ÀÇ, Æ÷ÀÎÅÍ¸¦ È£ÃâÇÏ¿© func
 	*ap = *bp;
 	*bp = tp;
 }
-*/

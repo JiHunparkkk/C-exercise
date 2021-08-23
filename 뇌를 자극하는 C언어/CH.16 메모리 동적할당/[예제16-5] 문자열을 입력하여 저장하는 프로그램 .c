@@ -1,11 +1,10 @@
-/* ¿Ö ÀÛµ¿ÀÌ ¾ÈµÇÁö??? */
-/*
+/* ì™œ ì‘ë™ì´ ì•ˆë˜ì§€??? */
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
-#include<stdlib.h> // malloc, atoi ÇÔ¼ö¸¦ À§ÇÑ Çì´õÆÄÀÏ
-#include<string.h> // strlen ÇÔ¼ö¸¦ À§ÇÑ Çì´õÆÄÀÏ
+#include<stdlib.h> // malloc, atoi í•¨ìˆ˜ë¥¼ ìœ„í•œ í—¤ë”íŒŒì¼
+#include<string.h> // strlen í•¨ìˆ˜ë¥¼ ìœ„í•œ í—¤ë”íŒŒì¼
 
-void str_prn(char**); // ¹®ÀÚ¿­ Ãâ·ÂÇÔ¼ö ¼±¾ğ
+void str_prn(char**); // ë¬¸ìì—´ ì¶œë ¥í•¨ìˆ˜ ì„ ì–¸
 
 int main(int argc, char **argv)
 {
@@ -20,7 +19,7 @@ int main(int argc, char **argv)
 	i = 0;
 	while (1)
 	{
-		printf("¹®ÀÚ¿­À» ÀÔ·ÂÇÏ¼¼¿ä :");
+		printf("ë¬¸ìì—´ì„ ì…ë ¥í•˜ì„¸ìš” :");
 		gets(temp);
 		if (temp[0] == '\0') break;
 
@@ -29,7 +28,7 @@ int main(int argc, char **argv)
 		i++;
 		if (i == max)
 		{
-			printf("¹®ÀÚ¿­ ÀÔ·ÂÀÌ ÃÖ´ë°ªÀ» ¸ğµÎ Ã¤¿ü½À´Ï´Ù.\n");
+			printf("ë¬¸ìì—´ ì…ë ¥ì´ ìµœëŒ€ê°’ì„ ëª¨ë‘ ì±„ì› ìŠµë‹ˆë‹¤.\n");
 			break;
 		}
 	}
@@ -53,4 +52,3 @@ void str_prn(char **sp)
 		sp++;
 	}
 }
-*/

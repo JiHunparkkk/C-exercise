@@ -1,4 +1,3 @@
-/*
 #include<stdio.h>
 
 struct student {
@@ -7,30 +6,29 @@ struct student {
 	int score[5];
 	double avg;
 };
-struct student average(struct student); // ±¸Á¶Ã¼º¯¼öÀÇ µ¥ÀÌÅÍ¸¦ Ãâ·ÂÇÏ°í Æò±ÕÀ» ±¸ÇÏ´Â ÇÔ¼öÀÇ ¼±¾ğ
+struct student average(struct student); // êµ¬ì¡°ì²´ë³€ìˆ˜ì˜ ë°ì´í„°ë¥¼ ì¶œë ¥í•˜ê³  í‰ê· ì„ êµ¬í•˜ëŠ” í•¨ìˆ˜ì˜ ì„ ì–¸
 
 int main()
 {
-	struct student sd = { 315,"È«±æµ¿",{ 82,93,74,90,65 } }; // ±¸Á¶Ã¼º¯¼öÀÇ ¼±¾ğ°ú ÃÊ±âÈ­
-	sd = average(sd); // ÇÔ¼ö¸¦ È£ÃâÇÒ¶§ ±¸Á¶Ã¼º¯¼ö¸¦ Àü´Ş
-	printf("Æò±Õ : %.1lf\n", sd.avg); // ÇÔ¼ö°¡ °è»êÇÑ Æò±ÕÀ» Ãâ·Â
+	struct student sd = { 315,"í™ê¸¸ë™",{ 82,93,74,90,65 } }; // êµ¬ì¡°ì²´ë³€ìˆ˜ì˜ ì„ ì–¸ê³¼ ì´ˆê¸°í™”
+	sd = average(sd); // í•¨ìˆ˜ë¥¼ í˜¸ì¶œí• ë•Œ êµ¬ì¡°ì²´ë³€ìˆ˜ë¥¼ ì „ë‹¬
+	printf("í‰ê·  : %.1lf\n", sd.avg); // í•¨ìˆ˜ê°€ ê³„ì‚°í•œ í‰ê· ì„ ì¶œë ¥
 
 	return 0;
 }
 
-struct student average(struct student s) // ¸Å°³º¯¼ö¿Í ¸®ÅÏ°ªÀÌ ¸ğµÎ ±¸Á¶Ã¼
+struct student average(struct student s) // ë§¤ê°œë³€ìˆ˜ì™€ ë¦¬í„´ê°’ì´ ëª¨ë‘ êµ¬ì¡°ì²´
 {
 	int i,sum=0;
 	
-	printf("ÇĞ¹ø : %d\n", s.num);
-	printf("ÀÌ¸§ : %s\n", s.name);
+	printf("í•™ë²ˆ : %d\n", s.num);
+	printf("ì´ë¦„ : %s\n", s.name);
 	for (i = 0; i < 5; i++) {
-		printf("Á¡¼ö : %5d", s.score[i]);
+		printf("ì ìˆ˜ : %5d", s.score[i]);
 		sum += s.score[i];
 	}
 	s.avg = sum / 5.0;
 	printf("\n");
 
-	return s; // Æò±ÕÀÌ ±¸ÇØÁø ±¸Á¶Ã¼ º¯¼ö¸¦ ´Ù½Ã ¸®ÅÏ
+	return s; // í‰ê· ì´ êµ¬í•´ì§„ êµ¬ì¡°ì²´ ë³€ìˆ˜ë¥¼ ë‹¤ì‹œ ë¦¬í„´
 }
-*/

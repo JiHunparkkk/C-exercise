@@ -1,4 +1,3 @@
-/*
 #define _CRT_SECURE_NO_WARNINGS 
 #include<stdio.h>
 
@@ -11,11 +10,10 @@ int main()
 {
 	struct cracker ck;
 	
-	printf("¹Ù»ç»èÀÇ °¡°İ°ú ¿­·®À» ÀÔ·ÂÇÏ¼¼¿ä : ");
+	printf("ë°”ì‚¬ì‚­ì˜ ê°€ê²©ê³¼ ì—´ëŸ‰ì„ ì…ë ¥í•˜ì„¸ìš” : ");
 	scanf("%d %d", &ck.price, &ck.calories);
 
-	printf("¹Ù»ç»èÀÇ °¡°İ : %d¿ø\n", ck.price);
-	printf("¹Ù»ç»èÀÇ ¿­·® : %dkcal\n", ck.calories);
+	printf("ë°”ì‚¬ì‚­ì˜ ê°€ê²© : %dì›\n", ck.price);
+	printf("ë°”ì‚¬ì‚­ì˜ ì—´ëŸ‰ : %dkcal\n", ck.calories);
 	return 0;
 }
-*/
